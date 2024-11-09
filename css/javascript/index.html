@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       /*  decalring a variable named as "a" which we will change when required  initially it is given 0  */
+         :root{
+          --a:0
+         }
+        body{
+            background-color: black;
+            color: white;
+            position: relative;
+        }
+
+      @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+       /* 
+       body{
+        background-color: black;
+        color: white;
+       } */
+
+       .logo{
+        filter: invert(1);
+        
+       
+       }
+
+      .navbar{
+    
+        display: flex;
+         justify-content: space-between;
+         align-items: center;
+        border: 2px solid black;
+    
+    
+       
+      }
+
+      .homelogo{
+      height: 15px;
+      width: 15px ;
+      z-index: 1;
+      margin: 8px;
+      border:7px solid rgb(212, 212, 212);
+      border-radius: 22px ;
+      filter: invert(1);
+      cursor: pointer;
+      padding: 1px;
+
+    }
+
+    .homelogo:hover{
+      padding: 1.36px;
+    }
+
+      .home{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        
+
+      }
+
+      p{
+        height: 30px;
+        width: 30vw;
+        border: 1px solid black;
+        border-radius: 13px;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       font-family: "Barlow", sans-serif;
+       font-size: small;
+       background-color: #1f1f1f;
+       cursor: pointer;
+       
+}
+p:hover{
+  border: 1.3px solid #1f1f1f;
+}
+
+.one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#a7a3a3;
+   
+    
+    /* filter: invert(1); */
+}
+p:hover{
+  background-color:#252525;
+  
+}
+
+.two{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: black;
+    filter: invert(1);
+}
+
+.ifr1{
+  margin: 4px;
+  filter: invert(1);
+  margin: auto;
+
+
+}
+
+.ifr2{
+margin: 6px;
+}
+
+.btn1{
+ height: 35px;
+ width: 75px;
+ border: none;
+ background-color: black;
+ color: gray;
+border-radius: 12px;
+font-family: "Barlow", sans-serif;
+font-weight: bold;
+font-size: smaller;
+cursor: pointer;
+}
+
+.btn1:hover{
+  color: white;
+}
+.btn2{
+   height: 35px;
+   width: 75px;
+   border: 2px solid black;
+   border-radius: 20px;
+   font-family: "Barlow", sans-serif;
+   font-size: 10px;
+   font-weight: bold;
+   cursor: pointer;
+
+}
+.btn2:hover{
+  background-color:rgb(192, 183, 183) ;
+  font-size: 11px;
+}
+.left{
+    height: 73vh;
+    width: 25vw;
+    border: 1px solid #212121;
+    border-radius: 8px ;
+    /* overflow: scroll; */
+    position: relative;
+    font-family: "Barlow", sans-serif;
+    background-color: #212121;
+
+    
+}
+
+.close{
+  display: none;
+}
+.left .close{
+ position: absolute;
+ right: 0%;
+
+ 
+}
+.newblock{
+  height: 15vh;
+  width: 25vw;
+  overflow-y: scroll;
+}
+.right{
+    height: 73vh;
+    width: 100%;
+    border: 1px solid #212121;
+    background-color: #212121;
+    margin: 0px 0px 2px 4px ;
+    border-radius: 8px ;
+    
+
+    
+}
+.written{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.firstblock{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   position: sticky;
+   top: 0%;
+ 
+
+ 
+  
+  
+}
+.lib{
+    border: none;
+    margin: 3px;
+    color: rgb(197, 187, 187);
+}
+/* .colorlib{
+  color: rgb(197, 187, 187);
+} */
+h3{
+    /* margin: 30px; */
+    padding: 15px;
+}
+.secondblock{
+    display: flex;
+    flex-direction: column;
+   gap: 5px;
+   margin: 10px;
+  border: 1px solid rgb(173, 157, 157);
+  border-radius: 10px ;
+  padding: 6px;
+  position: relative;
+  height: 15vh;
+  background-color:#4d4d4d;
+
+
+}
+.thirdblock{
+  border: 1px solid rgb(173, 157, 157);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 10px;
+  justify-content: center;
+  padding: 6px;
+  position: relative;
+  background-color: #4d4d4d;
+
+  
+
+}
+.font1{
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Barlow", sans-serif;
+  
+}
+.font2{
+  font-size: 10px;
+  font-weight: 500;
+  font-family: "Barlow", sans-serif;
+}
+.font3{
+  font-size: smaller;
+  font-weight: 500;
+  font-family: "Barlow", sans-serif;
+}
+.font4{
+  font-size: x-small;
+  font-weight: 500;
+  font-family: "Barlow", sans-serif;
+}
+.podcast{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 16px ;
+   width: 15vw;
+   height: 6vh;
+   font-weight: 700;
+   font-size: x-small;
+   padding: 4px;
+  }
+  .playlist{
+    width: 15vw;
+    border-radius: 16px;
+    font-weight: 600;
+    font-size: x-small;
+    padding: 5px;
+    
+  }
+
+  footer{
+   
+    position: sticky;
+    bottom: 0%;
+  margin-top: 20px;
+    
+
+  }
+
+  .foot{
+    position: sticky;
+    bottom: 0%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-wrap: row;
+    /* /* justify-content: center; */
+    align-items: center; 
+    
+ 
+    height: 20vh;
+    /* position: fixed; */
+    /* bottom: 0%; */
+   
+  }
+  li{
+    list-style: none;
+     font-size: x-small;
+     color: grey;
+   
+    
+  }
+ 
+
+
+  .art{
+    margin: 18px;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: larger;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .show{
+    font-weight: 200;
+    font-size: x-small;
+    color: grey;
+    
+  }
+  
+  .margin1{
+  height: 15vh;
+  width: 9vw;
+  margin:0px 0px 10px 25px ;
+  border-radius: 70px
+
+  }
+  .margin2{
+    margin: 0px 0px 2px 28px;
+    padding: 2px;
+    font-size:smaller;
+    font-weight:500;
+    
+  }
+.margin3{
+  font-size: x-small;
+  margin: 0px 0px 2px 28px;
+  font-weight: 100;
+  color: grey;
+  
+
+}
+  .arter{
+    display: flex;
+   
+    padding: 2px;
+
+    
+
+  }
+  
+  /* .firstart{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+   */
+    .firstart{
+      position: relative;
+    }
+
+   .play{
+    
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: rgb(62, 207, 62);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position:absolute;
+     top: 47%;
+     left: 72%;
+     opacity: var(--a);
+
+    
+   }
+
+   .firstart:hover{
+    background-color:#252525;
+    /*  here a is represneted as opacity parameter so if it is 0 it play will not appear and when it is one it will appear  */
+    --a:1;
+
+   }
+
+   .feet{
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   }
+
+   .songlist{
+    height: 40vh;
+    overflow-y: scroll;
+    margin-bottom: 25px 0;
+    width: 25vw;
+   
+
+   }
+  .songlist ul{
+    padding: 4px;
+    
+
+  }
+
+  /*  this styling is applicable on every element in li */
+  .songlist ul li{
+    list-style: decimal;
+    filter: invert(1);
+    display: flex;
+    cursor: pointer;
+    padding: 6px;
+    margin: 7px ;
+    border: 1px solid black;
+    border-radius: 7px ;
+    font-size:xx-small;
+    overflow-wrap: anywhere;
+    gap: 5px;
+
+  }
+  .playnow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .info{
+    font-size: 9px;
+  }
+  .seekbar{
+  
+  height: 4px ;
+  width: 65%;
+  border: 1px solid white;
+  position: absolute;
+  bottom: 15%;
+  border-radius: 10px;
+  cursor: pointer;
+
+  }
+  .circle{
+    height: 3px;
+    width: 4px;
+    border: 1px solid white;
+    background-color: aliceblue;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 0.2%; 
+    transition: left 0.5s;
+ 
+  }
+  #songplay{
+    cursor: pointer;
+  }
+
+
+ 
+  .songinfo{
+    font-size: xx-small;
+    width: auto;
+  }
+  .abovebar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+   
+    color: #4d4d4d;
+    padding: 40px;
+
+  }
+
+
+  .songtime{
+
+   font-size: x-small; 
+    
+  
+  }
+
+
+  .humburger{
+    display: none;
+  }
+  
+
+
+.volume{
+  filter: invert(1);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding-bottom: 13px;
+ padding-top: 3px;
+}
+
+
+.volume:hover
+.timevol{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ height: 80px;
+}
+  
+
+  @media (max-width:852px) {
+   .left{
+    position: absolute;
+    left: -100%;
+    transition: all 0.3s;
+    z-index: 1;
+    
+   
+   }
+   
+
+   .humburger{
+      display: block;
+      height: 20px ;
+      width:30px;
+      /* position: absolute;
+      left:-45%; */
+   }
+  }
+
+  .searchbar{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  @media (max-width:450px) {
+
+    .songbutton{
+      display: inline;
+     
+    }
+    .left{
+      position: absolute;
+       /* width as 100% is used for covering the width only given to left side but wit the help of width in px we can cover the distance we want */
+      width: 350px;
+    }
+
+    .newblock{
+      width: 110%;
+    }
+    .songlist{
+      width: 110%;
+      
+    }
+    .songlist ul li{
+      gap: 30px;
+      font-weight: bolder;
+      word-break: break-all;
+    }
+    .searchbar{
+      font-size: xx-small;
+    }
+
+    .one,.two{
+      display: flex;
+      justify-content: center;
+    }
+     
+    .margin1,.margin2,.margin3{
+      height: 40px;
+      width: 35px;
+      
+    }
+   
+    .songinfo,.songtime{
+      font-size: xx-small;
+      font-weight: bolder;
+    }
+
+    .close{
+      display: block;
+    }
+    
+    
+  }
+
+  </style>
+   
+</head>
+<body>
+    <div class="navbar">
+      <div class="logo">
+         
+     <img  src="logospotify.svg" alt="">
+     <img  class="humburger" src="humburger.svg" alt="sidebar">
+    </div>
+
+   
+    <div class="home">
+        <img class="homelogo" src="homespotify.svg" alt="">
+         <p class="searchbar">
+            <span class="one">
+                <iframe class="ifr1" src="search.svg" frameborder="0" height="15px" width="15px"></iframe>
+                 what do you want to search ?
+            </span>
+           <span class="two">
+              | <iframe class="ifr2" src="browse.svg" frameborder="0" height="15px" width="15px"></iframe>
+           </span>
+             
+         </p>
+       </div>
+      
+       <div class="topbtn">
+        <button class="btn1"> Sign up </button>
+        <button class="btn2"> Login In  </button>
+       </div>
+       
+
+</div>
+   
+<div class="written">
+    <div class="left">
+
+      <div class="close">
+        <img  style="filter: invert();" src="close.svg" alt="close">
+      </div>
+       <div class="firstblock">
+        <img  class="colorlib" src="lirbrary.svg" alt="" srcset="" height="20px" width="20px">
+        <p class="lib"> Your Library <iframe class="colorlib" src="add.svg" frameborder="0" height="14px" width="20px"></iframe> </p>
+       </div>
+      
+       <div class="newblock">
+        <div class="secondblock">
+          <section class="font1"> lets find some podcast to follow </section>
+          <section class="font2" > we will keep you updated on new episodes</section>
+           <button class="podcast"> Browse Podcasts </button>
+         </div>
+  
+         <div class="thirdblock">
+          <section class="font3"> create your first playlist </section>
+          <section class="font4"> it's easy we'll help you </section>
+           <button class="playlist"> create playlist </button>
+         </div>
+       </div>
+
+       <div class="songlist">
+        <ul>
+         
+        </ul>
+       </div>
+<!--      
+       
+       <footer>
+            <ul class="foot">
+              <li> legal</li>
+              <li>safety and privacy</li>
+              <li> assesibility</li>
+               <li>about ads</li>
+               <li>cookies</li>
+               <li> contact us </li>
+               <li> privacy policy</li>
+            </ul>
+      
+          </footer>
+             -->
+     
+          
+       </div>
+
+       <div class="right">
+       <div class="artists">
+      <div class="art"> 
+        Popular Artist 
+        <div class="show">
+        <section> <a class="show" href=""> Show all </a></section>
+        </div>
+      </div>
+      <div class="arter">
+
+        <!--  this data folder helps in storing data's additional information and then it can be easily used in js file to manipulate or filter data   -->
+        <div data-folder="cs" class="firstart">
+          <div class="play">
+            <img src="play.svg" alt="play">        
+          </div>
+        <img class="margin1"  src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca" alt="art1" srcset="">
+        <section class="margin2"> Pritam </section>
+        <section class="margin3"> Artist </section>    
+      </div>
+
+      <div  data-folder="ncs" class="firstart">
+        <img class="margin1"  src="https://i.scdn.co/image/ab67616100005174b19af0ea736c6228d6eb539c" alt="art1" srcset="">
+        <section class="margin2"> A.R Rahman</section>
+        <section class="margin3"> Artist </section>    
+      </div>
+
+      
+      <div class="firstart">
+        <img class="margin1"  src="https://i.scdn.co/image/ab676161000051749107d8873f80a26b36f2418e" alt="art1" srcset="">
+        <section class="margin2"> Sachin Jingar </section>
+        <section class="margin3"> Artist </section>    
+      </div>
+
+      
+      <div class="firstart">
+        <img class="margin1"  src="https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7" alt="art1" srcset="">
+        <section class="margin2"> Arjit Singh </section>
+        <section class="margin3"> Artist </section>    
+      </div>
+
+      
+      <div class="firstart">
+        <img class="margin1"  src="https://i.scdn.co/image/ab676161000051740f0be2054fe9594026a6b843" alt="art1" srcset="">
+        <section class="margin2"> Anirudh</section>
+        <section class="margin3"> Artist </section>    
+      </div>
+      
+      <div class="firstart">
+        <img class="margin1"  src="https://i.scdn.co/image/ab67616100005174c40600e02356cc86f0debe84" alt="art1" srcset="">
+        <section class="margin2"> Atif aslam </section>
+        <section class="margin3"> Artist </section>    
+      </div>
+   
+      
+
+      
+      
+       
+</div>
+       </div>
+
+       
+       </div>
+
+       
+</div>
+
+<footer>
+  <div class="feet">
+    <div class="seekbar">
+
+    <div class="circle">
+
+    </div>
+    </div>
+  
+    <div class="abovebar">
+<div class="songinfo">
+    
+    </div>
+    <div class="songbutton">
+      <img style="cursor: pointer;" id="previous" src="backwardplay.svg" alt="back">
+      <img style="cursor: pointer;" id="songplay" src="play.svg" alt="pause">
+      <img style="cursor: pointer;" id="next" src="nextplay.svg" alt="next">
+    </div>
+
+    <div class="timevol">
+
+    
+    <div class="songtime">
+
+    </div>
+  
+      <div class="volume">
+        <img src="volume.svg" alt="volume">
+      
+          <input  type="range" style="width: 40px; height: 5px; cursor: pointer;">
+       
+      </div>
+   
+    
+  </div>
+  </div>
+ 
+  </div>
+</footer>
+ 
+<script src="spotifyclone.js"></script>
+
+<audio id="audio" src="http://127.0.0.1:3000/css/javascript/songs/Brand%20New%20Baby%20Girl%20-%20Jeremy%20Korpas.mus7.mp3"></audio>
+</body>
+</html>
