@@ -166,7 +166,7 @@ document.querySelector(".songtime").innerHTML="00:00 / 00:00"
         console.log(e.href.split("/").slice(-2)[0]);
 
         //  here currfolder is itself represented as songs/ncs
-        let a=  await fetch(`http://127.0.0.1:3000/css/javascript/${foldercss\javascript\spotifyclone.js}/info.json`)
+        let a=  await fetch(`http://127.0.0.1:3000/css/javascript/${folder}/info.json`)
         let response= await a.json();
         console.log(response);
         firstart.innerHTML=firstart.innerHTML+` <div data-folder="cs" class="firstart">
