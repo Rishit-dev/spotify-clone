@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            height: 300px ;
+            width: 250px ;
+            border: 1px solid black;
+            background-image: url(https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) ;
+             
+
+            /* this proeprty can be used if  image size is less so to avoid repeatation automatically we use repeat none  */
+            background-repeat: none ;
+
+            /*  we can also use repeat in x and y axis respectively  */
+            background-repeat: repeat-x;
+
+            background-clip: border-box;
+            
+             
+
+
+        }
+
+        img{
+             height: 200px;
+            width: 150px ; 
+            
+            /*  there are some properties related to fiiting of image */
+
+
+            /* by this property your image will get inside the alloted dimensions irrespective of the cutting of the image it will only focus to cover the image  */
+                /* object-fit: cover;   */
+               
+               /*  by this property only that portion will be shown which we want */
+                /* object-position: top right;  */
+                
+                 
+                /* by default it will cover whole picture */
+                 /* object-fit: fill;   */
+
+                /* object-fit: scale-down; */
+
+                /* object-position: 10px 20px ; */
+
+             
+              /* with the help of this image will be fully displayed into the area alloted to it and some extra space will be left out in the container   */
+               
+               /* object-fit: contain;   */
+
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+    
+    <!-- <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""> -->
+   
+     </div>
+</body>
+</html>

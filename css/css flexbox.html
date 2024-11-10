@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container{
+            border: 2px solid black;
+            display: flex;
+            height: 50vh;
+
+            /*  these property only acts in main axis like if our flex direction is row the main axis is x axis so it will align the content horizonally in x axis and same for coloumn it will align all itmes in y-direction only  */
+
+            /* justify-content:center; */
+
+            /* align items centre is used when there is only one line of items but if there are multiple lines of items we use align-content center  */
+             align-items:center; 
+
+             align-content: center; 
+
+            /* we can also change the direction of flex by using the property of flex-direction  */
+            flex-direction: row ;
+            
+            /*  flex wrap helps the content to to move towards in the next line so that contents dimensions are not disturbed and itmes alligned itself in next line (overflow prevention) */
+            /* flex-wrap: wrap; */
+
+            /* this represents the (flex direction::wrap)   */
+            /* flex-flow: row wrap; */
+
+             /* gap: 20px ; */
+            /* row-gap: 10px ;
+            column-gap: 13px ;  */
+
+            /*  these all gaps can also be written as */
+               gap: 10px 13px ;  
+            
+
+             
+
+
+        }
+   
+.box{
+    height: 23px;
+    width: 22px;
+    background-color:lightblue;
+    border: 2px solid black;
+
+    /* flex grow is applied on items and by use of it whole width is used and if we give value as 1 this will signify that each box will occupy space of 1 box only  */
+    /* flex-grow: 1; */
+   
+
+   
+}
+
+/*  by default order is '0' so lesser the order items ar arranged earlier and larger the order therefore items are held later  */
+
+.order-1{
+    order: 1;
+}
+
+.order-2{
+    order: 2;
+}
+
+.order-3{
+    order: 3;
+
+}
+.order-4{
+    order: 4;
+}
+
+.item-1{
+    /* flex-grow: 2; */
+
+    /* shrink is applicable when there is no flex wrap property therfore  any item that is selected will be shrink to the value given to it  */
+    flex-shrink: 2;
+
+    /* through this it will align itself w.r.t the property applied on it  */
+    align-self: flex-end;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+         
+        <div class="box item-1"></div>
+        <div class="box order-2">2</div>
+        <div class="box order-1">56</div>
+        <div class="box order-1">4</div>
+        <div class="box"></div>
+         <div class="box"></div>
+         <div class="box order-1">77</div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <!-- <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div> -->
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  
+ .boxes .red {
+    background-color: red;
+  }
+  .red::first-line{
+    background-color: yellow;
+  }
+  /* properties or applying changes in all elemnents inside the class boxes  */
+   /* .boxes *{
+    color: aqua;
+    border: 2px solid black;
+  } 
+
+  p,a,.box,[data-color="primary"]{
+    padding-top: 25px;
+  } */
+
+
+  /*  even child that is .box is targeted  */
+  .box:nth-child(even){
+    background-color: blue;
+  }
+.box:nth-last-child(1){
+    color: lightblue;
+}
+ 
+.boxes::after{
+    content: harry is good;
+    color: maroon;
+}
+::selection{
+    color: aqua;
+    background-color: black;
+}
+.box::first-letter{
+  
+    color: peru;
+    font-size: 54px ;
+}
+input::placeholder{
+    color: blue;
+    font-size: 13 px;
+}
+   
+
+</style>
+</head>
+<body>
+    <div class="boxes">
+    <div class="red">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo iste nobis ad explicabo excepturi dicta. Quas delectus molestias nisi obcaecati impedit maiores placeat odio ea ratione fugiat reprehenderit harum, blanditiis consectetur ullam magni non itaque eaque ad! Necessitatibus fugit esse delectus ipsa inventore iure numquam sunt quasi unde eligendi laborum quo facere in error harum dolores repudiandae, repellendus commodi architecto quia earum fugiat ea, beatae iusto. Numquam veritatis suscipit eum. Maiores quae ab quidem sapiente quas hic in sed dignissimos iste qui debitis rerum iusto, repudiandae omnis similique minima laborum tempora eos esse minus voluptatibus explicabo, asperiores repellat. Voluptatibus hic veniam a dolore, voluptatem quae, iste nam, voluptatum architecto consectetur unde dignissimos repellendus harum? Iste nemo totam alias expedita non officia porro iure nisi ducimus obcaecati, ipsam quidem voluptatibus quas accusantium impedit eos ex reprehenderit illum laboriosam perspiciatis ipsa optio! Consequatur nobis ratione, ut quod omnis unde asperiores rerum repellat, tempore neque cupiditate officiis id quisquam expedita. Molestias delectus numquam ipsa voluptate ipsum cumque ea obcaecati, error eligendi doloribus iure harum, veritatis fugit placeat eos, qui vitae! Non in accusamus, enim neque molestiae omnis iusto quaerat rerum vel ea voluptas totam assumenda eius necessitatibus aliquam eaque libero saepe ut, fugit magni nisi provident ab repudiandae minima. Inventore dolores fugiat adipisci quia, magnam, eum vel nulla maiores mollitia sint officia. Nostrum laboriosam blanditiis quisquam beatae, iste modi numquam et quia laborum soluta dolorum aspernatur voluptatum? Vitae impedit omnis qui cumque iste praesentium non asperiores illo quaerat, pariatur quasi officia autem provident. Eum labore minima suscipit beatae sint nulla maxime soluta laudantium nihil consequatur officia doloremque repudiandae alias, excepturi odio corporis. Error, qui non a porro voluptas dignissimos eligendi hic deserunt blanditiis, quasi quia recusandae accusantium voluptatum quo. Animi dolore minus voluptatibus ipsum sunt ducimus voluptates fugiat voluptate corrupti, quisquam, natus dolor blanditiis tempora nemo nam dolorem provident dignissimos voluptatem quae quibusdam ullam eligendi fugit pariatur quis. Dicta veniam doloremque voluptatem, eos reprehenderit adipisci accusamus in magnam debitis enim recusandae eum maiores porro a eveniet!
+    </div>
+    <div data-color="primary" class="box"> i am box2</div>
+    <div class="box"> i am box3</div> 
+    <input type="text" placeholder="type your name ">  
+    </div>
+</body>
+</html>

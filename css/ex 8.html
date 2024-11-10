@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+         .container{
+            border: 1px solid black;
+            height: 70vh;
+            width: 100vw;
+            position: absolute;
+            background-color: blue;
+
+         }
+
+         .box{
+            border: 1px solid black;
+            height: 10vh;
+            width: 12vh;
+           
+           
+
+             /*  for position absolute give its parent element's position also absolute */
+            position: absolute;
+           bottom: 0%;
+           left: 0%; 
+           background-color: red;
+           border-radius: 30px ;
+          
+           /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: rishit1 3s linear infinite forwards ,rishit 3s  ease-in-out infinite alternate;     
+           /* animation: rishit 3s  ease-in-out infinite alternate ;   
+           */
+         }
+
+         @keyframes rishit1 {
+            from{
+            left: 0%;
+            }
+         to{
+            left: 100%;
+         } 
+        
+        
+        }
+
+
+
+
+
+         @keyframes rishit {
+            
+            from{
+             bottom: 0%;
+            }
+         to{
+          bottom: 100%;                  
+       
+         }
+        
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+
+   <div class="box">
+
+     </div>
+</div>
+
+</body>
+</html>

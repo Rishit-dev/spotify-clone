@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//  here we are creating a businnes name by using 3 subcategories from which we have to pic three words one from each sub heading ( we can use random here ) 
+
+/*adjective:
+ crazy
+ amazing
+ fire 
+ */
+
+ /* shop name 
+ engine 
+ tools 
+ garments 
+ */
+
+ /* another word 
+ bros 
+ engine 
+ limited 
+ */
+
+//  for this picking up of random word from 3 words let us create a variable (any) number from the math.random lirbrary  which will have range from 0 to 1 which we will divide into three parts and let the three parts be a part of if else statement which is put under conditions and then randomly words will be printed )
+
+let any=Math.random()
+// this random variable is applied on all the three subheading that is first second and third 
+
+//  and now let us name all the three sections as first second third section which will be used as a business name
+
+let first="a";
+let second="b";
+let third="c";
+
+if (any<0.33) {
+   a="crazy";
+    
+}
+
+else if (any >0.33 && any<=0.66) {
+    a="amazing";
+}
+ else{
+    a="fire";
+ }
+ 
+
+if (any<0.33) {
+   b="engine";
+    
+}
+
+else if (any >0.33 && any<=0.66) {
+    b="tools";
+}
+ else{
+    b="garments";
+ }
+if (any<0.33) {
+   c="bros";
+    
+}
+
+else if (any >0.33 && any<=0.66) {
+    c="engine";
+}
+ else{
+    c="limited";
+ }
+
+ console.log(` "the brand name is:", ${a}  ${b}  ${c}` );
+ 
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

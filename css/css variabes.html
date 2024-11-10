@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+   <style>
+
+    /* variable declaration  */ 
+
+     :root{
+        /* --color: rgb(255, 0, 247); */
+        --seccolor: rgb(231, 164, 246); 
+        --defpad: 23px;
+        --defop: 0.4; 
+     }
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+      ul{
+        display: flex;
+        background-color: yellow;
+        
+      }
+      .red{
+        background-color: rgb(129, 201, 129);
+        background-color: var(--seccolor);
+
+      }
+      li{
+        list-style: none;
+        padding: var(--defpad);
+        opacity: var(--defop);
+        
+      }
+     
+       ul :first-child{
+        border: 2px solid  black;
+        background-color: var(--color);
+
+       }
+       .yellow{
+        border: 2px solid maroon;
+        /* local variable */
+        --color: rgb(96, 165, 82);
+        background-color: var(--color,blue);
+       }
+     
+    
+    
+    </style>
+
+</head>
+<body>
+    <div>
+        <ul>
+            <li>how are you</li>
+            <li>i am fine</li>
+            <li>thank you </li>
+        </ul>
+    </div>
+    <p class="red">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aliquid quaerat laboriosam consequatur quo consectetur temporibus praesentium repudiandae veritatis iste? Ad repellat totam eius recusandae, alias culpa facilis dicta nam.
+    </p>
+    <p class="yellow">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni numquam vel beatae deserunt rem ex ipsum esse, nihil in aperiam sed adipisci, veritatis enim voluptate, architecto nemo. Quasi in provident obcaecati iusto dignissimos recusandae quod quaerat assumenda velit laboriosam nisi distinctio error reprehenderit expedita voluptas ipsa saepe modi maxime fuga, dolorum numquam! Exercitationem sint id rerum.
+    </p>
+</body>
+</html>

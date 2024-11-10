@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .red{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container red bg-red">
+
+        <!--  here we have created a attribute named style  -->
+        <div class="box" style="display: flex;"  data-craetedby="harry" data-managedby="rohan" id="getid">
+            hey i am a box 
+        </div>
+        
+        <!--  inline script is added  -->
+        <script>
+            //  we have created a new div which we have to append with .container
+            
+            //      solution no.1
+        //     let div=document.createElement("div");
+        // //    some innerhtml is provided for checking whether our append functionn worked or not 
+        //     div.innerHTML="hey i have succesfully inserted the div <b>by harry</b> "
+        //     // div.className="newdiv"
+
+        //     //  another way of setting class to a div here class is newdiv
+        //     div.setAttribute=( "class", "newdiv")
+        //     //  used to append that means at last 
+        //     document.querySelector(".container").append(div)
+        //     //  inserted before .container
+        //     document.querySelector(".container").before(div)
+             
+        //     //  inserted after the div .container ends as a whole 
+        //     document.querySelector(".container").after(div)
+
+            //  solution no.2 for inserting element 
+            let cont=document.querySelector(".container")
+            cont.insertAdjacentHTML(   "beforeend" ,    "<p>hey this is new insertion </p>")
+
+        //     //  remove function 
+        //    let id1= document.getElementById("getid") 
+        //     id1.remove()
+
+     document.querySelector(".container").classList
+//    output 
+    //  DOMTokenList(3) ['container', 'red', 'bg-red', value: 'container red bg-red']
+
+   document.querySelector(".container").className
+    'container red bg-red'
+
+    document.querySelector(".container").classList.add("harry")
+
+    document.querySelector(".container").classList.remove("harry")
+
+    //  toggle is used to run and close the class associated with it 
+    document.querySelector(".container").classList.toggle("red")
+
+        </script>
+    </div>
+</body>
+</html>

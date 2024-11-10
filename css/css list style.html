@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav ul li{
+            background-color: blue;
+            list-style: georgian;
+            list-style-position: inside;
+            border: 2px solid yellow;
+            list-style-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.rawpixel.com%2Fsearch%2Fcartoon&psig=AOvVaw31Hb_6b31Dk2OLRkfSDB36&ust=1720528404143000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMCN64G7l4cDFQAAAAAdAAAAABAH)
+        }
+
+        /* display will always be used in direct parent */
+         
+       
+        ul{
+            /* flex in display changes the written code in one line */
+            display:flex;
+            /* inside ul there is lists which is direct children so whole as a list will be centralized */
+            justify-content: center;
+            
+        }  
+        /* all dimension change take place in list items */
+         li{
+            padding: 23px;
+        } 
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="red"> home</li>
+            <li>
+
+                hey i am coder</li>
+            <li>contact</li>
+        </ul>
+    </nav>
+</body>
+
+</html>

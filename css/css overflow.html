@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    
+    .box{
+        width: 30vw;
+        height: 20vh;
+        border: 2px solid blue;
+        /* in overlay it will give only one scroll bar and text will align in one direction only 
+        overflow: overlay; */
+        overflow: scroll;
+        white-space:nowrap;  
+
+        /* overflow is diff form text overflow beacuse overflow controls the words to stop exiting form the box 
+        but text overflow prevents reading all the test and convert whole text into short form by doing(...) in case of ellipsis */
+        text-overflow:ellipsis;
+        
+    }
+   </style>
+</head>
+<body>
+    <div class="box">
+    i want to wirte a paragraph on Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate tenetur rerum fuga aut voluptatem commodi incidunt delectus nobis, eveniet perferendis laborum quis iusto impedit officia veniam est, repudiandae quasi error consectetur vel, ipsa dolores? Dicta accusamus error nemo nisi est doloremque debitis similique molestias! Quos cupiditate amet a at labore fuga error ab corrupti veniam magni!
+
+    </div>
+</body>
+</html>

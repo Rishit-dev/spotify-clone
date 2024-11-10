@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <style>
+    /* element selector */
+    div {
+      color: blueviolet;
+    }
+
+    /* class selector */
+    .black {
+      background-color: burlywood;
+    }
+
+    /* id selector */
+    #leetcode {
+      color: blue;
+    }
+
+    /* child selector */
+    div>p {
+      background-color: aqua;
+    }
+
+    div>span {
+      color: brown;
+    }
+
+    /* descendant selector */
+    div p {
+      background-color: cadetblue;
+    }
+
+    /* universal selector */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* pseudo selector */
+    /* after visiting a website the colour that will appear is show by this  */
+     a:visited{
+        background-color: aqua;
+      }
+      /* if we are visitng the website for first time than it will show us a color  */
+      a:link{
+        background-color: green;
+      } 
+      /* when we will click the word it will show us a color  */
+      a:active{
+        background-color: coral;
+      }
+      
+      
+      a:hover{
+        background-color: yellow;
+      }
+      /* p is the first child of any parent element  */
+      p:first-child{
+        background-color: yellow;
+      }
+  </style>
+</head>
+
+<body>
+  <div class="black">
+    coding is the best thing to do
+  </div>
+  <div id="leetcode">
+    practice coding regularly
+  </div>
+  <div>
+    <span>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatum neque non, soluta, sit voluptatem
+        laborum similique earum nemo ea distinctio odit labore iusto qui dolore, minus illum laboriosam excepturi.
+      </p>
+    </span>
+   
+  </div>
+  <div>
+    <span>
+      hey do this now
+    </span>
+  </div>
+  <div>
+    <article>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore accusantium at veniam cumque cupiditate a
+        ipsam, dolorum iusto nemo harum commodi ullam. Cumque perferendis sed reprehenderit quae maxime quod dolorem.
+      </p>
+    </article>
+  </div>
+  <a target="_blank" href="https://www.google.com"> GOOGLE </a>
+  <a target="_blank" href="https://www.netflix.com"> netflix</a>
+  <span>
+    <p>
+      i am first
+    </p>
+    <p>
+      i am second
+    </p>
+  </span>
+
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+             margin: 0;
+            padding: 0;
+        } 
+        .red {
+            /* it is left to right margin ratio */
+            
+            margin: 23px auto;
+            background-color: yellow;
+            /* its called view port width adjusts acc. to users resoltution  */
+            width: 80vw;
+            /* height: 25vh; */
+            min-height: 80vh
+            
+            
+        }
+        html{
+            font-size: 12px;
+        }
+
+        /* due to span inline nature it can not move anywhre */
+        .hello {
+            background-color: pink;
+            width: 80vw;
+
+        }
+
+        .harry {
+            background-color: maroon; 
+            width: 80vw;
+            height: 35vh;
+            margin: 23px 56px;
+            font-style: italic;
+            /* font-size: 26px; */
+           
+           
+        }
+        /* rem will increase the root value that is given in html(by default the value of root value is 16px but we have given it 12px)and also if we give 2em here and will not specify thee value of font size in article element it will by default take the value of given html that is root value(12*2=24px) and if not given byy value by defualt it will take value as 16px */
+
+        .harry article {
+            font-size: 2rem;
+        }
+        .code{
+            color: maroon;
+            background-color: red;
+            font-size: 17px;
+            width: 75vmax;
+                    
+        }
+         .container{
+            border: 2px solid black;
+            background-color: orange;
+             /* height: 50vh; */
+             height: 100vh;
+             width: 40vw;
+             
+         }
+         .container div {
+            border: 2px solid black;
+            width: 50%;
+           
+            
+            
+            
+         }
+
+         .container div div {
+            border: 2px solid black;
+            width: 50%;
+            
+            
+         }
+
+    </style>
+</head>
+
+<body>
+    <div class="red">
+       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit pariatur quo debitis vero dolorum suscipit itaque optio in odio! Aliquid harum dignissimos ullam laudantium, rerum totam impedit tempora necessitatibus voluptatem.
+      
+    </div>
+    <span class="hello">
+        i am another line
+    </span>
+
+    <div class="harry">
+       
+        <article>
+           nice to meet you
+        </article>
+    </div>
+    <span class="code">
+   code ith harry is good in coding
+    </span>
+   
+   
+    <div class="container">
+        <div> 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ad voluptatem minima, voluptatibus cumque iure ex repellendus nobis laudantium error perspiciatis provident cupiditate vitae quidem neque modi, sint quia. 
+
+        <div>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas quae commodi unde dolore inventore repellat, laboriosam fugit quisquam obcaecati, nam voluptatibus, deleniti assumenda? Facilis, similique. Optio provident laborum fugiat vitae.
+        </div>
+         
+        </div>
+    
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+             margin: 0;
+            padding: 0; 
+        }
+        .parent{
+         border: 2px solid black;
+         margin: 23px;
+         padding: 12px;
+         position: absolute;
+         height:200vh ;
+
+          /* position of parent can also ebe fixed by transform , filter,perspective  */
+          /* transform: translate(0); */
+           /* filter: invert(0); */
+           /* perspective: 0em; */
+           
+
+
+        }
+        .box{
+            border: 2px solid blue;
+            height:50vh ;
+            width: 50vw;
+            
+            
+
+        }
+        .box1{
+            background-color: hsl(0, 0%, 50%);
+             position:absolute; 
+             top: 0px;
+            /* if we give top in terms of percentage the box1 will positioned itself 2px from its parent element 
+            so we have to give position to its parent element else it will align itself w.r.t html that is default top border of content */
+             /* top: 2px; */
+          
+             /* can be used as a navigation tool */
+             /* position: sticky;
+             top: 0px;
+             height: 15vh;
+             width: 77vw;
+              */
+
+
+           
+            
+
+
+
+        }
+        .box2{
+            background-color: orange;
+              position:relative ;  
+             /* so if we have to take on  another  so positive relative is mandatory of the one which has to be moved on the other */
+             /* z-index: 1; */
+           
+        }
+         .box3{
+            background-color: red;
+            /* position: fixed; */
+         }
+    </style>
+</head>
+<body>
+    <div class="parent">
+
+        <div class="box box1"> i am box 1</div>
+        <div class="box box2"> i am box2</div>
+        <div class="box box3"> i am box3</div>
+
+    </div>
+    
+</body>
+</html>

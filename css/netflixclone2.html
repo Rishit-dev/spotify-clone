@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: black;
+            height: auto;
+        }
+
+        /* Default styles for the body */
+
+
+/* Media query for screens larger than 768px (tablet/desktop view) */
+@media (min-width: 768px) {
+  body {
+    background-color: black;
+    font-size: 18px;
+    padding: 40px;
+  }
+}
+
+/* Media query for screens smaller than 480px (mobile view) */
+@media (max-width: 480px) {
+  body {
+    background-color: black;
+    font-size: 14px;
+    padding: 10px;
+}
+}
+
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+        
+            /* padding: 0%;
+            margin: 0%; */
+        
+
+        img {
+            height: 35px;
+            width: 102px;
+            position: relative;
+
+            /* by z-index the image the obect will be poop out of the background */
+            z-index: 10;
+        }
+
+        .main {
+            background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/655a9668-b002-4262-8afb-cf71e45d1956/5ff265b6-3037-44b2-b071-e81750b21783/IN-en-20240715-POP_SIGNUP_TWO_WEEKS-perspective_WEB_c6d6616f-4478-4ac2-bdac-f54b444771dd_large.jpg);
+            height: 90vh;
+            position: relative;
+
+            /*  to make it responsive we are fixing its position  */
+            background-position: center center;
+            background-size: max(1000px, 100vw);
+
+            background-repeat: no-repeat;
+
+        }
+
+        .main .box {
+            height: 90vh;
+            /*  width in percentaage can be only given if our parent position is defined  */
+            width: 100%;
+            opacity: 0.44;
+            position: absolute;
+            top: 0%;
+            background-color: black;
+
+        }
+
+        nav {
+            /* background-color:blue; */
+            max-width: 80vw;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            /* height: 62px ;   */
+
+
+        }
+
+        .btn {
+            position: relative;
+            z-index: 10;
+            padding: 3px 8px;
+            font-weight: bold;
+            background-color: white;
+
+        }
+
+        .red-btn {
+            background-color: red;
+            color: white;
+            padding: 10px 12px;
+            font-size: 18px;
+            font-weight: 400;
+            border-radius: 5px;
+
+        }
+
+        .main input {
+            padding: 10px 12px;
+            font-size: 15px;
+            border-radius: 5px;
+            width: 25vw;
+            color: white;
+            background-color: rgba(23, 23, 23, 0.7);
+            border: 1px solid rgba(94, 87, 87, 0.7);
+        }
+
+
+        .hero {
+            padding: 30px;
+            margin-top: 60px;
+            /* height:100%; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            position: relative;
+            z-index: 10;
+            gap: 18px;
+            font-family: "Martel Sans", sans-serif;
+
+        }
+
+        .h1 {
+            font-weight: 900;
+            font-size: 42px;
+            align-items: center;
+        }
+
+        .h2 {
+            font-weight: 400;
+            font-size: 22px;
+            align-items: center;
+        }
+
+        .watch {
+            font-weight: 400;
+            font-size: 20px;
+            align-items: center;
+        }
+
+        .watch2{
+            display: flex;
+            justify-content: center;
+            padding: 18px;
+            font-size: larger;
+        }
+
+        .flex {
+            display: inline-flex;
+            gap: 5px;
+           
+        }
+
+        .down{
+            display:flex;
+            justify-content: center;
+            padding: 10px;
+
+           
+        }
+
+        .down input{
+            width: 25vw;
+            height: 7vh;
+            padding: 0 15px;
+            font-size: medium;
+        }
+
+        .down button{
+            padding: 11px;
+          width: 13vw;
+           align-items: center;
+           font-size:x-large;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .btn-red-sm {
+            background-color: red;
+            color: white;
+            font-weight: 400;
+            border: 1px solid white;
+            border-radius: 4px;
+            cursor: pointer;
+            padding: 10px;
+            margin: 15px;
+            width: 5vw;
+            font-family: "Martel Sans", sans-serif;
+
+
+
+        }
+
+        .btneng {
+            background-color: rgba(36, 34, 34, 0.242);
+            color: white;
+            border: 1px solid white;
+            border-radius: 4px;
+             cursor: pointer; 
+            padding: 10px;
+            width: 8vw;
+            font-family: "Martel Sans", sans-serif;
+             font-weight: 600; 
+          
+           
+             
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+          
+        }
+        select{
+            background-color: rgba(36, 34, 34, 0.242);
+           margin: 0 35px;
+           color: white;
+           border: none;
+        }
+
+         /* option{
+            margin: 0 50px;
+         } */
+/* 
+        .gap .btneng{
+            margin-left: 20px;
+        } */
+
+        .gap{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .sepration {
+            height: 7px;
+            background-color: grey;
+            position: relative;
+            bottom: -16%;
+
+        }
+
+        .first {
+            height: 80vh;
+            width: 70vw;
+            margin: auto;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .secimg {
+            position: relative;
+            /* height: 50vh;
+    width: 40vw; */
+        }
+
+        .secimg img {
+            /* height: 100%;
+    width: 100%; */
+            /* position:absolute ; */
+            width: 40vw;
+            height: 60vh;
+        }
+
+        .secimg video {
+            /* height: 50vh;
+    width: 40vw; */
+            height: 35vh;
+            position: absolute;
+            top: 20%;
+            left: 70px;
+
+        }
+        h2 {
+            font-size: 45px;
+            font-weight: 700;
+            align-items: center;
+            font-family: "Martel Sans", sans-serif;
+        }
+
+        .tvs {
+            font-size: 28px;
+            align-items: center;
+            margin: 15px;
+            font-family: "Martel Sans", sans-serif;
+
+        }
+
+        .nikita {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 6px;
+
+        }
+
+        .sepration2 {
+            height: 7px;
+            background-color: grey;
+        }
+
+        .second {
+
+            height: 80vh;
+            width: 70vw;
+            margin: auto;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+
+
+        }
+
+        .img2 img {
+            height: 50vh;
+            width: 30vw;
+
+        }
+
+        .img2 {
+            position: relative;
+        }
+
+        .box2 {
+            height: 7vh;
+            width: 20vw;
+            color: rgb(218, 83, 83);
+            border: 1px solid white;
+        }
+
+
+        .vid{
+            height: 45vh;
+            width: 25vw;
+            position: absolute;
+            left: 90px;
+            bottom: 70%;
+           
+        }
+
+        .faq{
+            /* display: flex;
+            flex-direction: column; */
+           /* align-items: center; */
+            color: white;
+            height:120vh;
+           
+        }
+
+    .faq h2{
+        text-align: center;
+        
+         padding: 30px ; 
+
+        }
+
+        .faqbox:hover{
+            background-color: #414141;
+        }
+
+      /*  this is done to invert all the color specifically in all svgs
+      the color will be inverted like black is converted to its inversion that is white   */
+        .faqbox svg{
+             filter: invert(1); 
+        }
+
+        .faqbox{
+
+             transition: all 0.5s ease-in-out; 
+           
+            background-color: #2d2d2d;
+            height: 10vh;
+            width: 70vw;
+
+            /*  this is representated as margin:( top/bottom and right/left ) */
+            margin:12px auto;
+            padding: 0 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid white;
+            font-size: 26px;
+            font-family: "Martel Sans", sans-serif;
+
+
+           
+
+        }
+
+        footer{
+            height: 40vh;
+            padding-top: 50px ;
+            color: white;
+        }
+
+        .footer{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
+            /* height: 50vh; */
+            row-gap: 40px;
+            max-width: 60vw;
+            margin: auto;
+            /* padding: 40px; */
+            color: white;
+           
+            
+        }
+         footer .questions {
+
+            display: flex;
+            /* justify-content: center; */
+           
+             margin: 20px 250px; 
+           text-align: center; 
+           color: white;
+         
+        }
+
+        .footer-item{
+            display: flex;
+            flex-direction: column;
+            color: white;
+            gap: 17px;
+            /* color: white;*/
+        }
+
+        .footer a{
+            font-size: 14px;
+            color: white;
+        }
+        .height{
+            height: 3vh;
+        }
+       
+      
+     .gap{
+        position: relative;
+     }
+       .gap img{
+        position: absolute;
+        left:-30px ;
+        color: white;
+        height: 3vh;
+       }
+
+       .box3{
+        display: inline-flex;
+        height: 25px;
+        width: 9vw;
+        margin: auto;
+
+       }
+
+       .box3  select{
+        margin: 0 10px;
+       }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+
+        <nav>
+            <span>
+                <img src="assets/background image.svg" alt="">
+            </span>
+
+            <div class="gap">
+
+                <div class="btn btneng">
+
+                
+                 <img src="assets/lan.svg" alt=""> 
+                <select >
+                    <option value="english">english</option>
+                    <option value="hindi">hindi</option>
+            </select>
+
+        </div>
+                <button class="btn btn-red-sm"> Sign In </button>
+            </div>
+        </nav>
+
+
+        <div class="box">
+
+        </div>
+
+        <div class="hero">
+            <span class="h1"> Unlimited movies, tv shows and more</span>
+
+            <div class="h2"> watch anywhere. cancel anytime
+            </div>
+            <span class="watch"> ready to watch? enter your email to create or restart your membership </span>
+
+            <div class="flex">
+                <input type="text"  placeholder="Email address">
+                <button class="btn  red-btn"> Get Started &gt; </button>
+            </div>
+
+        </div>
+
+        <div class="sepration">
+
+            sepration
+        </div>
+
+    </div>
+
+
+    <section class="first">
+        <div class="nikita">
+            <h2> Enjoy on your TV </h2>
+            <span class="tvs"> Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and
+                more.</span>
+
+
+        </div>
+
+
+        <div class="secimg">
+            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
+            <video data-uia="nmhp-card-animation-asset-video" autoplay="" playsinline="" muted="" loop="">
+                <source
+                    src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
+                    type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <div class="sepration2">
+        sepration2
+    </div>
+
+    <section class="second">
+
+        <div class="secimg">
+            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt"
+                alt="">
+
+        </div>
+
+        <div class="nikita">
+            <h2> Download your shows to watch offline</h2>
+            <span class="tvs">Save your favourites easily and always have something to watch.</span>
+
+        </div>
+
+        </div>
+    </section>
+
+    <div class="sepration2">
+        sepration2
+    </div>
+
+    <section class="second">
+
+
+        <div class="nikita">
+            <h2> Watch everywhere</h2>
+            <span class="tvs">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</span>
+
+        </div>
+
+        <div class="secimg">
+            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png" alt">
+
+            <video class="vid"   data-uia="nmhp-card-animation-asset-video" autoplay="" playsinline="" muted="" loop=""><source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v" type="video/mp4"></video>
+
+        </div>
+</section>
+
+<div class="sepration2">
+sepration2
+</div>
+
+<section class="second">
+  
+
+    <div class="secimg">
+        <img src="https://occ-0-6335-3647.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d" alt">
+
+        
+    </div>
+    
+    
+    <div class="nikita">
+        <h2> Create profiles for kids</h2>
+        <span class="tvs">Send children on adventures with their favourite characters in a space made just for them—free with your membership.</span>
+
+    </div>
+
+    
+
+</section>
+
+<div class="sepration2">
+sepration2
+</div>
+
+<section class="faq">
+
+    <h2> Frequently Asked Questions</h2> 
+
+    <div class="faqbox">
+        What Is Netflix?
+     <img src="assets/plus.svg" alt="">
+        
+    </div>
+
+    <div class="faqbox">
+        how much does netflix cost 
+        
+        <img src="assets/plus.svg" alt="">
+        
+        
+    </div>
+
+    <div class="faqbox">
+       where can i watch  
+       <img src="assets/plus.svg" alt="">
+        
+    </div>        
+
+
+
+    <div class="faqbox">
+       how do i cancel
+
+       <img src="assets/plus.svg" alt="">
+        
+    </div>
+
+
+    <div class="faqbox">
+        What can i watch on netflix
+
+        <img src="assets/plus.svg" alt="">
+        
+    </div>
+
+    <div class="faqbox">
+        is ntflixx good for kids
+
+        <img src="assets/plus.svg" alt="">
+        
+    </div>
+
+
+   <!-- <div class="height">
+
+   </div> -->
+    <span class="watch watch2"> ready to watch? enter your email to create or restart your membership </span>
+
+
+    <div class="flex down">
+        <input type="text" placeholder="Email address">
+        <button class="btn  red-btn"> Get Started &gt; </button>
+    </div>
+
+<!-- </div> -->
+
+
+   </section>
+
+   <div class="sepration2">
+
+    i am sepration2
+   </div>
+
+   <footer>
+
+    <div class="questions">
+        Questions? Call 000-800-919-1694
+
+    </div>
+   
+    <div class="footer">
+        <div class="footer-item">
+            <a href="faq"> FAQ </a>
+            <a href="faq"> FAQ </a>
+            <a href="faq"> FAQ </a>
+
+
+            <div class="btn btneng box3">
+
+                
+                <img src="assets/lan.svg" alt=""> 
+               <select >
+                   <option value="english">english</option>
+                   <option value="hindi">hindi</option>
+           </select>
+
+       </div>
+
+
+
+            <a href="faq"> FAQ </a>
+            <a href="faq"> FAQ </a>
+            
+        </div>
+
+        <div class="footer-item">
+            <a href="faq"> FAQ </a>
+            <a href="faq"> FAQ </a>
+            <a href="faq"> FAQ </a>
+            <a href="faq"> FAQ </a>
+            <a href="faq"> FAQ </a>
+            
+        </div>
+
+        <div class="footer-item">
+            <a href="faq"> FAQ </a>
+            <a href="faq"> FAQ </a>
+            <a href="faq"> FAQ </a>
+            <a href="faq"> FAQ </a>
+            <a href="faq"> FAQ </a>
+            
+        </div>
+        
+        
+        
+
+        <div class="footer-item">
+            <a href="faq"> FAQ </a>
+            <a href="faq"> FAQ </a>
+            <a href="faq"> FAQ </a>
+            <a href="faq"> FAQ </a>
+            <a href="faq"> FAQ </a>
+            
+        </div>
+    </div>
+
+   </footer>
+
+</body>
+
+</html>

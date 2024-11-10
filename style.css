@@ -1,0 +1,6 @@
+a :visited{
+    background-color: brown;
+  }
+  a :link{
+   background-color: aquamarine;
+  }

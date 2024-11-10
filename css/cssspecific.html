@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+         /* specificity is 10 */
+          /* usage of important tag is shown here  */
+           
+          .harry{
+            background-color: pink;
+             background-color: blue !important;
+         } 
+         
+
+        #firstid{
+            background-color: maroon;
+        }
+        /* specificity is 10 */
+        div {
+            background-color: red;
+        }
+        /* specificity is 10 */
+        /* .harry{
+            background-color: pink;
+             background-color: blue !important; 
+        } */
+        /* specificity is 11 */
+        div.coder {
+            background-color: maroon;
+        }
+      /* specificity is 10 */
+        .rishit {
+            background-color: yellow;
+        }
+        usage of important tag is shown here 
+       /* this is attribute selector */
+        [data-x=a]{
+        background-color: red;
+       }
+
+        
+        
+        
+        h4{
+            text-transform: capitalize;
+            text-decoration-line: underline;
+            text-decoration-color: blue;
+            text-decoration-thickness: 6px;
+        }
+        /* its specificity is 1+10+10+10+10=41 */
+       a.harryclass.rohan-class[href]:hover{
+        color: marron;
+       }
+
+
+    </style>
+</head>
+
+<body>
+    <h2> oder of specificity</h2>
+    <h4> inline selector&gt; important&gt;id selector&gt;class or attribute selector&gt;element&gtuniversal selector </h4>
+    <div id="firstid" class="coder harry rishit " data-x="a"> coding is fun </div>
+</body>
+
+</html>

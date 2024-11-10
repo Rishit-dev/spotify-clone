@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .child {
+            border: 2px solid black;
+            margin: 15px;
+            padding: 15px;
+            background-color: aqua;
+        }
+
+        .container {
+            border: 2px solid black;
+            margin: 15px;
+            padding: 15px;
+            background-color: blue;
+        }
+
+        .childcontainer {
+            border: 2px solid black;
+            margin: 15px;
+            padding: 15px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="childcontainer">
+            <div class="child">
+                hey i am a child
+            </div>
+        </section>
+    </div>
+    <div class="topic">
+        <button>
+            hey i am new topic
+        </button>
+    </div>
+    <script>
+
+
+       
+    //    function that will run after applying the event that is denoted by "()" and if we have to make changes in the event we use 'e' inside this "()" and write e."" in the content 
+        document.querySelector(".container").addEventListener("click", (e) => {
+            e.stopPropagation()
+            alert("i was clicked ")
+        })
+
+
+        document.querySelector(".childcontainer").addEventListener("click", (e) => {
+            e.stopPropagation()
+            alert("i was clicked ")
+        })
+        document.querySelector(".child").addEventListener("click", (e) => {
+            e.stopPropagation()
+            alert("i was clicked ")
+        })
+
+        //  shortcut for addeventlistner 
+        // addEventListener("dblclick", "hey i am newly updated ")
+
+
+        function getrandomcolor() {
+
+            //  syntax to generate a random number between two number that is (0 and 255)
+
+            //  formula to generate a random number between two numbers
+            //a +math.random()*(b-a)
+            //   math.ceil helps to round off the random integer to nearest integer 
+            val1 = Math.ceil(0 + Math.random() * 255);
+            val2 = Math.ceil(0 + Math.random() * 255);
+            val3 = Math.ceil(0 + Math.random() * 255);
+
+            //  we have applied template literals here so that we can perform operations on certain value 
+            return `rgb(${val1}, ${val2}, ${val3})`
+        }
+
+
+
+
+        //    if we want our function to repeat at certain intervals 
+       let a = setInterval(() => {
+            document.querySelector(".child").style.color = getrandomcolor()
+        }, 1000);
+        
+        console.log(a);
+
+        //  to stop it from reocuuring 
+        clearInterval(1)
+
+
+        //  after a given fixed interval it will change its color for one repeatation only 
+        let b = setTimeout(() => {
+            document.querySelector(".child").style.color = getrandomcolor()
+        }, 4000);
+        
+        console.log(b);
+    //    to stop it from reocurring 
+        clearTimeout(1)
+        
+    </script>
+</body>
+
+</html>
